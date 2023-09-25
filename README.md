@@ -11,6 +11,7 @@
     Bu proje C# .Net Core 6.0 kullanarak geliştirilmiş bir konsol uygulamasıdır. Algoritma içerisinde kullanılan kodların tamamı Program.cs dosyasının içerisinde
     bulunmaktadır.
     <br />
+	  <br />
     Projenin amacı, adresi (lokasyonu) verilen dosyanın, windows işletim sistemi dahilinde bulunan kullanıcılar tarafından erişime sahip olup, olmadığının
     kontrolünü yapıp, hangi kullanıcının ne gibi izinlere sahip olduğunu listelemektedir.
   </p>
