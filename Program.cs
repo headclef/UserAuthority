@@ -20,24 +20,28 @@ class Program
         AuthorizationRuleCollection authorizationRuleCollection = fileSecurity.GetAccessRules(true, true, typeof(NTAccount));
 
         // Output
+        Console.WriteLine();
+        Console.WriteLine(
+            "Account\t\t\t" +
+            "Rights\t\t" +
+            "Access\t" +
+            "Inherited ACE\t" +
+            "Inheritance Flags\t" +
+            "Propagation Flags");
         foreach (FileSystemAccessRule rule in authorizationRuleCollection)
         {
             if (rule.IdentityReference is NTAccount)
             {
                 NTAccount account = rule.IdentityReference as NTAccount;
-                Console.WriteLine("Account: {0}", account.Value);
-                Console.WriteLine("Rights: {0}", rule.FileSystemRights);
-                Console.WriteLine("Type: {0}", rule.AccessControlType);
-                Console.WriteLine("Inherited ACE: {0}", rule.IsInherited);
-                Console.WriteLine("Inheritance Flags: {0}", rule.InheritanceFlags);
-                Console.WriteLine("Propagation Flags: {0}", rule.PropagationFlags);
-                Console.WriteLine();
+                Console.WriteLine(
+                    $"{account.Value}\t" +
+                    $"{rule.FileSystemRights}\t" +
+                    $"{rule.AccessControlType}\t" +
+                    $"{rule.IsInherited}\t\t" +
+                    $"{rule.InheritanceFlags}\t\t\t" +
+                    $"{rule.PropagationFlags}");
             }
-            //Console.WriteLine();
-            //Console.WriteLine("Identity: {0}", rule.IdentityReference.Value);
-            //Console.WriteLine("Rights: {0}", rule.FileSystemRights);
-            //Console.WriteLine("Inherited ACE: {0}", rule.IsInherited);
-            //Console.WriteLine(": {0}", rule);
         }
+        Console.WriteLine();
     }
 }
