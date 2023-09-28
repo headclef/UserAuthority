@@ -63,6 +63,7 @@ class Program
                                 $"{rule.PropagationFlags}");
                         }
                     }
+                    Console.WriteLine();
                     FindFolders(folder);                                                    // Recursive
                 }
                 else
