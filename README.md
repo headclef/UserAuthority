@@ -1,54 +1,54 @@
-﻿<!--/Başlık-->
+﻿<!--Başlık-->
 <div align = "center">
-  <h1>
-    DOSYA ERİŞİM İZNİ KONTROLÜ
-  </h1>
+	<h1>
+		DOSYA ERİŞİM İZNİ KONTROLÜ
+	</h1>
 </div>
-<!--//Başlık-->
-<!--/İlk Paragraf-->
+
+<!--İlk Paragraf-->
 <div align = "justify">
-  <p>
-    Bu proje C# .Net Core 6.0 kullanarak geliştirilmiş bir konsol uygulamasıdır. Algoritma içerisinde kullanılan kodların tamamı Program.cs dosyasının içerisinde
-    bulunmaktadır.
-    <br />
-	<br />
-    Projenin amacı, adresi (lokasyonu) verilen dosyanın, windows işletim sistemi dahilinde bulunan kullanıcılar tarafından erişime sahip olup, olmadığının
-    kontrolünü yapıp, hangi kullanıcının ne gibi izinlere sahip olduğunu listelemektedir.
-	<br />
-	<br />
-	Geliştirilen projenin test işlemleri oluşturulmuş olan bir test klasörler bütünü içerisinde yapılmıştır. Bu klasörler bütünü ise aşağıdaki görselde
-	gösterildiği şekilde oluşturulmuştur.
-  </p>
+	<p>
+		Bu proje C# .Net Core 6.0 kullanarak geliştirilmiş bir konsol uygulamasıdır. Algoritma içerisinde kullanılan kodların tamamı Program.cs dosyasının içerisinde
+		bulunmaktadır.
+		<br />
+		<br />
+		Projenin amacı, adresi (lokasyonu) verilen dosyanın, windows işletim sistemi dahilinde bulunan kullanıcılar tarafından erişime sahip olup, olmadığının
+		kontrolünü yapıp, hangi kullanıcının ne gibi izinlere sahip olduğunu listelemektedir.
+		<br />
+		<br />
+		Geliştirilen projenin test işlemleri oluşturulmuş olan bir test klasörler bütünü içerisinde yapılmıştır. Bu klasörler bütünü ise aşağıdaki görselde
+		gösterildiği şekilde oluşturulmuştur.
+	</p>
 </div>
 <div align="center">
-  <img src="/images/altKlasorler.png" />
+	<img src="/images/altKlasorler.png" />
 </div>
 <div align = "justify">
-  <p>
-    Mevcut sürümde program, ilgili adres girişi yapılmış olan klasör ve ilgili klasöre ait alt klasörler ve erişilebilecek en alt klasöre kadar, Windows 'da
-	bulunan bütün kullanıcıların erişim bilgilerini konsola bastırır.
-  </p>
+	<p>
+		Mevcut sürümde program, ilgili adres girişi yapılmış olan klasör ve ilgili klasöre ait alt klasörler ve erişilebilecek en alt klasöre kadar, Windows 'da
+		bulunan bütün kullanıcıların erişim bilgilerini konsola bastırır.
+	</p>
 </div>
-<!--//İlk Paragraf-->
-<!--/İkinci Paragraf-->
+
+<!--İkinci Paragraf-->
 <div align = "center">
-  <h2>🪐 KULLANILAN TEKNOLOJİLER 🪐</h2>
+	<h2>🪐 KULLANILAN TEKNOLOJİLER 🪐</h2>
 </div>
 <div align = "center">
 	<a target = "_blank"><img alt = "C#" src = "https://img.shields.io/badge/-C%23-3776AB?style=flat-square&logo=c-sharp&logoColor=white" align = "middle" height = "25"></a>
 </div>
-<!--//İkinci Paragraf-->
-<!--/Üçüncü Paragraf-->
+
+<!--Üçüncü Paragraf-->
 <div align = "center">
-  <h2>🪐 KULLANILAN EDİTÖRLER 🪐</h2>
+	<h2>🪐 KULLANILAN EDİTÖRLER 🪐</h2>
 </div>
 <div align = "center">
 	<a target = "_blank"><img alt = "Visual Studio" src = "https://img.shields.io/badge/-Visual%20Studio-3776AB?style=flat-square&logo=visual-studio&logoColor=white" align = "middle" height = "25"></a>
 </div>
-<!--//Üçüncü Paragraf-->
-<!--/Dördüncü Paragraf-->
+
+<!--Dördüncü Paragraf-->
 <div align = "center">
-  <h2>🪐 SOSYAL MEDYA 🪐</h2>
+	<h2>🪐 SOSYAL MEDYA 🪐</h2>
 </div>
 <div align = "center">
 	<a href = "https://www.twitch.tv/deofhell" target = "_blank"><img alt = "Twitch" src = "https://img.shields.io/badge/-Twitch-3776AB?style=flat-square&logo=twitch&logoColor=white" align = "middle" height = "25"></a>
@@ -63,13 +63,12 @@
 	<a href = "https://www.hackerrank.com/elbisetakim" target = "_blank"><img alt = "Hackerrank" src = "https://img.shields.io/badge/-Hackerrank-3776AB?style=flat-square&logo=hackerrank&logoColor=white" align = "middle" height = "25"></a>
 	<a href = "https://github.com/headclef" target = "_blank"><img alt = "Github" src = "https://img.shields.io/badge/-Github-3776AB?style=flat-square&logo=github&logoColor=white" align = "middle" height = "25"></a>
 </div>
-<!--//Dördüncü Paragraf-->
-<!--/Beşinci Paragraf-->
+
+<!--Beşinci Paragraf-->
 <div align = "center">
-  <h2>🪐 İLETİŞİM 🪐</h2>
+	<h2>🪐 İLETİŞİM 🪐</h2>
 </div>
 <div align = "center">
 	<a href = "https://www.linkedin.com/in/furkantural" target = "_blank"><img alt = "LinkedIn" src = "https://img.shields.io/badge/-LinkedIn-3776AB?style=flat-square&logo=Linkedin&logoColor=white" align = "middle" height = "25"></a>
 	<a target = "_blank"><img alt = "E - Mail" src= "https://img.shields.io/badge/-furkanturalofficial@outlook.com-3776AB?style=flat-square&logo=microsoft-outlook&logoColor=white" align = "middle" height = "25"></a>
 </div>
-<!--//Beşinci Paragraf-->
