@@ -14,8 +14,6 @@ class Program
         Console.Write("Please write the console path correctly without misinformation (use file extention too): ");
         folderPath = Console.ReadLine();
 
-        
-
         // Output
         Console.WriteLine();
         Console.WriteLine(
