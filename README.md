@@ -20,8 +20,8 @@
 	gösterildiği şekilde oluşturulmuştur.
   </p>
 </div>
-<div align="cente">
-  <img src="~/images/altKlasorler.png" />
+<div align="center">
+  <img src="/images/altKlasorler.png" />
 </div>
 <!--//İlk Paragraf-->
 <!--/İkinci Paragraf-->
