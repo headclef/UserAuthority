@@ -14,10 +14,7 @@ class Program
         Console.Write("Please write the console path correctly without misinformation (use file extention too): ");
         folderPath = Console.ReadLine();
 
-        // Folder Access Control
-        FileInfo fileInfo = new FileInfo(folderPath);
-        FileSecurity fileSecurity = fileInfo.GetAccessControl();
-        AuthorizationRuleCollection authorizationRuleCollection = fileSecurity.GetAccessRules(true, true, typeof(NTAccount));
+        
 
         // Output
         Console.WriteLine();
@@ -30,22 +27,56 @@ class Program
             "Inherited ACE\t" +
             "Inheritance Flags\t" +
             "Propagation Flags");
-        foreach (FileSystemAccessRule rule in authorizationRuleCollection)
+
+        //Console.WriteLine();
+
+        FindFolders(folderPath);
+    }
+    static void FindFolders(string? folderPath)
+    {
+        ICollection<string>? folders = Directory.GetDirectories(folderPath);                // Get folders
+        if (folders != null)
         {
-            if (rule.IdentityReference is NTAccount)
+            foreach (string folder in folders)
             {
-                NTAccount account = rule.IdentityReference as NTAccount;
-                Console.WriteLine(
-                    $"{account.Value}\t" +
-                    $"{rule.FileSystemRights}\t" +
-                    $"{(rule.FileSystemRights & FileSystemRights.Read) == FileSystemRights.Read}\t\t" +
-                    $"{(rule.FileSystemRights & FileSystemRights.Write) == FileSystemRights.Write}\t\t" +
-                    $"{rule.AccessControlType}\t" +
-                    $"{rule.IsInherited}\t\t" +
-                    $"{rule.InheritanceFlags}\t\t\t" +
-                    $"{rule.PropagationFlags}");
+                Console.WriteLine(folder);                                                  // Output           - If true
+                ICollection<string>? subFolders = Directory.GetDirectories(folder);         // Get subfolders
+                if (subFolders != null)
+                {
+                    // Folder Access Control
+                    FileInfo fileInfo = new FileInfo(folderPath);
+                    FileSecurity fileSecurity = fileInfo.GetAccessControl();
+                    AuthorizationRuleCollection authorizationRuleCollection = fileSecurity.GetAccessRules(true, true, typeof(NTAccount));
+
+                    // Output
+                    foreach (FileSystemAccessRule rule in authorizationRuleCollection)
+                    {
+                        if (rule.IdentityReference is NTAccount)
+                        {
+                            NTAccount account = rule.IdentityReference as NTAccount;
+                            Console.WriteLine(
+                                $"{account.Value}\t" +
+                                $"{rule.FileSystemRights}\t" +
+                                $"{(rule.FileSystemRights & FileSystemRights.Read) == FileSystemRights.Read}\t\t" +
+                                $"{(rule.FileSystemRights & FileSystemRights.Write) == FileSystemRights.Write}\t\t" +
+                                $"{rule.AccessControlType}\t" +
+                                $"{rule.IsInherited}\t\t" +
+                                $"{rule.InheritanceFlags}\t\t\t" +
+                                $"{rule.PropagationFlags}");
+                        }
+                    }
+                    FindFolders(folder);                                                    // Recursive
+                }
+                else
+                {
+                    Console.WriteLine("No folders found.");                                 // Output           - If false
+                }
             }
+            
         }
-        Console.WriteLine();
+        else
+        {
+            Console.WriteLine("No folders found.");                                         // Output           - If false
+        }
     }
 }
