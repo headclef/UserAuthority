@@ -24,6 +24,8 @@ class Program
         Console.WriteLine(
             "Account\t\t\t" +
             "Rights\t\t" +
+            "Can Read\t" +
+            "Can Write\t" +
             "Access\t" +
             "Inherited ACE\t" +
             "Inheritance Flags\t" +
@@ -36,6 +38,8 @@ class Program
                 Console.WriteLine(
                     $"{account.Value}\t" +
                     $"{rule.FileSystemRights}\t" +
+                    $"{(rule.FileSystemRights & FileSystemRights.Read) == FileSystemRights.Read}\t\t" +
+                    $"{(rule.FileSystemRights & FileSystemRights.Write) == FileSystemRights.Write}\t\t" +
                     $"{rule.AccessControlType}\t" +
                     $"{rule.IsInherited}\t\t" +
                     $"{rule.InheritanceFlags}\t\t\t" +
