@@ -20,15 +20,21 @@
 		gösterildiği şekilde oluşturulmuştur.
 	</p>
 </div>
-<div align="center">
-	<img src="/images/altKlasorler.png" />
-</div>
-<div align = "justify">
-	<p>
-		Mevcut sürümde program, ilgili adres girişi yapılmış olan klasör ve ilgili klasöre ait alt klasörler ve erişilebilecek en alt klasöre kadar, Windows 'da
-		bulunan bütün kullanıcıların erişim bilgilerini konsola bastırır.
-	</p>
-</div>
+
+<!--Görselli Paragraf-->
+<table>
+	<tbody>
+		<td width = "300px" align = "center">
+			<img src="/images/altKlasorler.png" />
+		</td>
+		<td>
+			<p align = "justify">
+				Mevcut sürümde program, ilgili adres girişi yapılmış olan klasör ve ilgili klasöre ait alt klasörler ve erişilebilecek en alt klasöre kadar, Windows 'da
+				bulunan bütün kullanıcıların erişim bilgilerini konsola bastırır.
+			</p>
+		</td>
+	</tbody>
+</table>
 
 <!--İkinci Paragraf-->
 <div align = "center">
